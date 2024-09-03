@@ -221,6 +221,6 @@ Para instalar estas extensiones, sigue estos pasos:
 
 Una vez que hayas instalado y activado estas extensiones, tu entorno de escritorio Gnome debería estar configurado de acuerdo a las preferencias vistas en la imagen.
 
-##Wallpapers con Paleta de Colores de Nord Theme
+## Wallpapers con Paleta de Colores de Nord Theme
 
 [Wallpapers Nord Theme](https://github.com/linuxdotexe/nordic-wallpapers).
