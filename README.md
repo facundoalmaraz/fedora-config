@@ -22,6 +22,8 @@
 7. [Instalación de Extensiones para Gnome](#instalación-de-extensiones-para-gnome)
    - [Extensiones del Usuario](#extensiones-del-usuario)
    - [Instalación de Extensiones](#instalación-de-extensiones)
+8. [Wallpapers con Paleta de Colores de Nord Theme](#wallpapers-con-paleta-de-colores-de-nord-theme)
+
 
 ## Configurar DNF para Descargas más Rápidas
 
@@ -218,3 +220,7 @@ Para instalar estas extensiones, sigue estos pasos:
 3. **Activar las extensiones utilizando la aplicación `Gnome Tweaks` o la aplicación `Gnome Extensions` instalada previamente.**
 
 Una vez que hayas instalado y activado estas extensiones, tu entorno de escritorio Gnome debería estar configurado de acuerdo a las preferencias vistas en la imagen.
+
+##Wallpapers con Paleta de Colores de Nord Theme
+
+[Wallpapers Nord Theme](https://github.com/linuxdotexe/nordic-wallpapers).
