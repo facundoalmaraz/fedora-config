@@ -22,16 +22,13 @@ Este repositorio contiene una colección de configuraciones útiles para optimiz
    - [Configurar GTK 4.0](#configurar-gtk-40)
 7. [Instalación de Extensiones para Gnome](#instalación-de-extensiones-para-gnome)
    - [Extensiones del Usuario](#extensiones-del-usuario)
-   - [Extensiones del Sistema](#extensiones-del-sistema)
    - [Instalación de Extensiones](#instalación-de-extensiones)
 
 ## Configurar DNF para Descargas más Rápidas
 
-Mejorar la velocidad de descarga de paquetes en Fedora puede optimizar significativamente tu experiencia. Aquí te explicamos cómo puedes optimizar DNF seleccionando los espejos más rápidos y aumentando el número de descargas paralelas.
 
 ### Editar la Configuración de DNF
 
-Para configurar DNF y lograr descargas más rápidas, sigue estos pasos:
 
 1. Abre una terminal.
 2. Edita el archivo de configuración de DNF ubicado en `/etc/dnf/dnf.conf` con el siguiente comando:
@@ -48,15 +45,12 @@ Para configurar DNF y lograr descargas más rápidas, sigue estos pasos:
 
 4. Guarda y cierra el archivo.
 
-Con este ajuste, DNF permitirá hasta 10 descargas en paralelo, acelerando el proceso de obtención de paquetes.
 
 ## Actualizar el Sistema
 
-Mantener tu sistema Fedora actualizado es esencial para garantizar la seguridad, estabilidad y el acceso a las últimas características.
 
 ### Actualizar y Mejorar el Sistema
 
-Para actualizar y mejorar tu sistema, sigue estos pasos:
 
 1. Abre una terminal.
 2. Ejecuta el siguiente comando para actualizar el sistema:
@@ -71,15 +65,11 @@ Para actualizar y mejorar tu sistema, sigue estos pasos:
     sudo dnf upgrade
     ```
 
-Estos comandos actualizarán los paquetes instalados y mejorarán el sistema, asegurando que tengas las últimas versiones y parches de seguridad.
 
 ## Habilitar RPM Fusion y Otros Repositorios de Terceros
 
-Para instalar software adicional y acceder a una mayor variedad de paquetes, es recomendable habilitar RPM Fusion y otros repositorios de terceros.
 
 ### Instalar RPM Fusion
-
-Sigue estos pasos para habilitar RPM Fusion:
 
 1. Abre una terminal.
 2. Ejecuta los siguientes comandos para habilitar los repositorios de RPM Fusion (libres y no libres):
@@ -94,15 +84,12 @@ Sigue estos pasos para habilitar RPM Fusion:
 
 ### Instalar Gnome Tweaks y la Aplicación de Extensiones
 
-Para personalizar y optimizar la interfaz de GNOME, puedes instalar Gnome Tweaks y la aplicación de extensiones con el siguiente comando:
-
 ```bash
 sudo dnf install gnome-tweaks gnome-extensions-app
 ```
 
 ## Configuración de Multimedia en Fedora
 
-Una vez que RPM Fusion esté configurado, puedes mejorar la experiencia multimedia en Fedora siguiendo estos pasos.
 
 ### Cambiar a ffmpeg completo
 
@@ -113,16 +100,13 @@ sudo dnf swap ffmpeg-free ffmpeg --allowerasing
 ```
 
 ## Instalar Codecs Adicionales
-Para que las aplicaciones que utilizan el framework gstreamer y otros programas multimedia puedan reproducir codecs restringidos adicionales, sigue estos pasos:
 
-Instala los paquetes multimedia complementarios necesarios para las aplicaciones habilitadas para gstreamer:
 
 ```bash
 
 sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 ```
 
-Instala los paquetes complementarios de sonido y video necesarios para algunas aplicaciones:
 
 ```bash
 sudo dnf update @sound-and-video
@@ -141,9 +125,9 @@ sudo dnf install libva-nvidia-driver
 sudo dnf update -y
 ```
 
-Luego, reinicia el sistema si no estás en el kernel más reciente.
+Luego, reinicia el sistema 
 
-Instala el módulo akmod-nvidia para obtener los controladores NVIDIA:
+Instalar el módulo akmod-nvidia para obtener los controladores NVIDIA:
 
 ```bash
 
@@ -158,7 +142,7 @@ sudo dnf install xorg-x11-drv-nvidia-cuda
 ```
 
 
-Para verificar que el módulo se haya construido correctamente, ejecuta:
+Para verificar que el módulo se haya construido correctamente
 
 ```bash
 
@@ -169,16 +153,13 @@ Debería devolver la versión del controlador, y no un error de módulo no encon
 
 ## Instalación del Tema Nordic theme
 
-
-
-
 1. **Descarga y extrae el archivo ZIP del tema:**
    - Descarga el archivo ZIP del repositorio [Nordic](https://github.com/EliverLara/Nordic).
    - Extrae el archivo ZIP en el directorio de temas, es decir, `/usr/share/themes/` o `~/.themes/` (crea el directorio si es necesario).
 
 2. **Aplicar el tema en Gnome:**
 
-   Para establecer el tema en Gnome, ejecuta los siguientes comandos en la Terminal:
+   Para establecer el tema en Gnome, ejecutar los siguientes comandos en la Terminal:
 
    ```bash
    gsettings set org.gnome.desktop.interface gtk-theme "Nordic"
@@ -187,12 +168,10 @@ Debería devolver la versión del controlador, y no un error de módulo no encon
 
 3. **Configurar GTK 4.0:**
 
-Copia el contenido de la carpeta ~/.themes/Nordic/gtk-4.0/ y llévalo a ~/.config/gtk-4.0/, incluyendo la carpeta assets para que se apliquen correctamente los botones y otros elementos gráficos.
+Copiar el contenido de la carpeta ~/.themes/Nordic/gtk-4.0/ y llévalo a ~/.config/gtk-4.0/, incluyendo la carpeta assets para que se apliquen correctamente los botones y otros elementos gráficos.
 
 
 ## Instalación de Extensiones para Gnome
-
-Además del tema Nordic, puedes mejorar tu experiencia de usuario en Gnome instalando las siguientes extensiones.
 
 ### Extensiones del Usuario
 
@@ -223,22 +202,6 @@ Además del tema Nordic, puedes mejorar tu experiencia de usuario en Gnome insta
 9. **User Themes**
    - Habilita la opción de seleccionar temas de usuario desde la configuración de Gnome.
 
-### Extensiones del Sistema
-
-1. **Apps Menu**
-   - Añade un menú de aplicaciones en la barra superior.
-
-2. **Background Logo**
-   - Muestra el logotipo del fondo de Gnome.
-
-3. **Launch new instance**
-   - Permite lanzar una nueva instancia de una aplicación desde el menú de aplicaciones.
-
-4. **Places Status Indicator**
-   - Muestra accesos directos a los lugares más usados como Home, Descargas, etc., en la barra superior.
-
-5. **Window List**
-   - Añade una lista de ventanas abiertas en la barra inferior de Gnome.
 
 ### Instalación de Extensiones
 
