@@ -1,6 +1,5 @@
 # Guía de Configuración de Fedora
 
-Este repositorio contiene una colección de configuraciones útiles para optimizar y personalizar tu sistema Fedora. A continuación, encontrarás una guía detallada para mejorar tu experiencia con Fedora.
 
 ## Tabla de Contenidos
 1. [Configurar DNF para Descargas más Rápidas](#configurar-dnf-para-descargas-más-rápidas)
@@ -170,6 +169,7 @@ Debería devolver la versión del controlador, y no un error de módulo no encon
 
 Copiar el contenido de la carpeta ~/.themes/Nordic/gtk-4.0/ y llévalo a ~/.config/gtk-4.0/, incluyendo la carpeta assets para que se apliquen correctamente los botones y otros elementos gráficos.
 
+![image](https://github.com/user-attachments/assets/be8a1c1a-8e31-4bb1-a907-292ba121bb89)
 
 ## Instalación de Extensiones para Gnome
 
